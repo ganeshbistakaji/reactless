@@ -1,0 +1,9 @@
+nav.rl-navbar--reactless {
+  width: 100%;
+}
+
+nav.rl-navbar--reactless.rl-navbar--boxed .rl-navbar-container--reactless  {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+}

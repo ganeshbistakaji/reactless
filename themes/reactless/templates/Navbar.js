@@ -4,10 +4,11 @@ export default class Navbar extends Template {
   render() {
     const brandText = this.escape(this.attributes.brandtext ?? "");
     const brandImage = this.escape(this.attributes.brandimage ?? "");
+    const brandAlt = this.escape(this.attributes.brandalt ?? "");
 
     let brandContent = "";
     if (brandImage) {
-      brandContent = `<img src="${brandImage}" alt="${brandText || "Brand Logo"}" class="rl-navbar__brand-image" />`;
+      brandContent = `<img src="${brandImage}" alt="${brandAlt || "Brand Logo"}" class="rl-navbar__brand-image" />`;
     } else if (brandText) {
       brandContent = `<span class="rl-navbar__brand-text">${brandText}</span>`;
     }
