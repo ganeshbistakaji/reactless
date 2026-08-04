@@ -1,0 +1,8 @@
+.rl-footer--material {
+  padding: 32px 24px;
+  text-align: center;
+  background: #F7F2FA;
+  border-top: 1px solid #E7E0EC;
+  font-family: var(--rl-font-sans);
+}
+.rl-footer--material .rl-footer__text { margin: 0; font-size: 0.875rem; color: #6F6A75; }

@@ -1,0 +1,26 @@
+.rl-view--reactless{
+  width: 100%;
+}
+
+.rl-view--reactless.rl-view--boxed {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+@media only screen and (min-width: 1025px) {
+  .rl-view--reactless {
+    padding: 0px 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024.98px) {
+  .rl-view--reactless {
+    padding: 0px 40px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .rl-view--reactless {
+    padding: 0px 20px;
+  }
+}

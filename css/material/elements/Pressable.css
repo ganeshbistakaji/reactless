@@ -1,0 +1,18 @@
+.rl-btn--material {
+  font-family: var(--rl-font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+}
+.rl-btn--material:hover { box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.12); transform: translateY(-1px); }
+.rl-btn--material:active { transform: translateY(0); }
+.rl-btn--material.rl-btn--rounded { border-radius: 999px; }
+.rl-btn--material[disabled] { opacity: 0.4; cursor: not-allowed; box-shadow: none; transform: none; }
+.rl-btn--material.rl-btn--primary { background: #6750A4; color: #fff; }
+.rl-btn--material.rl-btn--secondary { background: #E8DEF8; color: #1D192B; }
+.rl-btn--material.rl-btn--danger { background: #B3261E; color: #fff; }

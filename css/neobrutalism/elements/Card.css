@@ -1,0 +1,19 @@
+.rl-card--neobrutalism {
+  width: max-content;
+  position: relative;
+  background: #fff;
+  border: 3px solid #111;
+  border-radius: 0;
+  padding: 24px;
+  box-shadow: 8px 8px 0 #111;
+  font-family: var(--rl-font-sans);
+}
+.rl-card--neobrutalism .rl-card__tag {
+  position: absolute; top: -14px; left: 20px;
+  background: #4D9DE0; color: #111; border: 3px solid #111;
+  font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.08em;
+  padding: 2px 8px;
+}
+.rl-card--neobrutalism .rl-card__title { margin: 8px 0 12px; font-size: 1.25rem; font-weight: 900; text-transform: uppercase; color: #111; }
+.rl-card--neobrutalism .rl-card__body { color: #111; line-height: 1.6; }
+.rl-card--neobrutalism .rl-card__body > * + * { margin-top: 12px; }

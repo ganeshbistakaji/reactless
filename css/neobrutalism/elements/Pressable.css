@@ -1,0 +1,20 @@
+.rl-btn--neobrutalism {
+  font-family: var(--rl-font-sans);
+  font-size: 0.9375rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 12px 22px;
+  border: 3px solid #111;
+  border-radius: 0;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.rl-btn--neobrutalism:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 #111; }
+.rl-btn--neobrutalism:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #111; }
+.rl-btn--neobrutalism[disabled] { opacity: 0.4; cursor: not-allowed; box-shadow: none; transform: none; }
+.rl-btn--neobrutalism .rl-btn__arrow { display: inline-block; }
+.rl-btn--neobrutalism.rl-btn--primary { background: #FFD23F; color: #111; }
+.rl-btn--neobrutalism.rl-btn--secondary { background: #fff; color: #111; }
+.rl-btn--neobrutalism.rl-btn--danger { background: #FF5DA2; color: #111; }

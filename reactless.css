@@ -1,0 +1,45 @@
+/* Import Fonts */
+
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*
+ * Reactless base stylesheet — the one CSS file a page ever links to
+ * directly. Per-component, per-theme styles are injected automatically at
+ * runtime and only for components actually present on the page (see
+ * core/Loader.js and core/ThemeManager.js) — this file only holds the
+ * handful of rules every page needs regardless of which components it uses.
+ */
+
+/* Hides any element Reactless is about to upgrade until its themed JS+CSS
+   has finished loading and it's actually been re-rendered, avoiding a flash
+   of raw/native content. Set synchronously by Parser._markPending() and
+   removed the moment an element is replaced (or, on error, removed
+   explicitly so a broken component fails open/visible rather than staying
+   invisible forever — see Renderer.js). */
+[data-rl-pending] {
+  visibility: hidden;
+}
+
+/* Unknown custom elements default to display:inline; these are meant to be
+   block-level sections/containers even before they're upgraded. */
+:where(hero, navbar, card, alert) {
+  display: block;
+}
+
+:root {
+  --rl-font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --rl-font-poppins: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

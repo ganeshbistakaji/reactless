@@ -1,0 +1,27 @@
+.rl-subheading--reactless {
+  font-family: var(--rl-font-poppins);
+  font-weight: 500;
+  color: #111826;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+  .rl-subheading--reactless {
+    font-size: 48px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024.98px) {
+  .rl-subheading--reactless {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .rl-subheading--reactless {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}

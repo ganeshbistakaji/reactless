@@ -1,0 +1,7 @@
+.rl-footer--neobrutalism {
+  padding: 28px 24px;
+  text-align: center;
+  background: #111;
+  font-family: var(--rl-font-sans);
+}
+.rl-footer--neobrutalism .rl-footer__text { margin: 0; font-size: 0.875rem; font-weight: 700; color: #FFF6E9; text-transform: uppercase; letter-spacing: 0.04em; }

@@ -1,0 +1,16 @@
+.rl-navbar--neobrutalism {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #FFF6E9;
+  border-bottom: 3px solid #111;
+  font-family: var(--rl-font-sans);
+}
+.rl-navbar--neobrutalism .rl-navbar__brand { font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.125rem; color: #111; }
+.rl-navbar--neobrutalism .rl-navbar__links { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
+.rl-navbar--neobrutalism .rl-navbar__link {
+  color: #111; text-decoration: none; font-weight: 700; font-size: 0.9375rem;
+  border-bottom: 3px solid transparent;
+}
+.rl-navbar--neobrutalism .rl-navbar__link:hover { border-bottom-color: #FF5DA2; }

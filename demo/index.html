@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reactless demo</title>
+    <link rel="stylesheet" href="../reactless.css" />
+  </head>
+  <body>
+    <View>
+      <!-- <Navbar
+        brandtext="MySite"
+        brandimage="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+        menus='[{"menu": "Home", "link": "/"}, {"menu": "About", "link": "/about"}, {"menu": "Contact", "link": "/contact"}]'
+      /> -->
+      <Heading>Hello</Heading>
+      <SubHeading>Subheading</SubHeading>
+      <Pressable theme="reactless" link="https://youtube.com" newtab
+        >Idiot</Pressable
+      >
+      <Pressable theme="reactless">Arish</Pressable>
+      <Title>HI</Title>
+
+      <!-- <GridView columns="4" fraction="1">
+        <SubHeading>Subheading 1</SubHeading>
+        <SubHeading>Subheading 2</SubHeading>
+        <SubHeading>Subheading 3</SubHeading>
+        <SubHeading>Subheading 4</SubHeading>
+      </GridView> -->
+
+      <GridView columns="4" fraction="1">
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="200"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+        ></Card>
+        <Card
+          title="This is a card"
+          char="200"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+        ></Card>
+        <Card
+          title="This is a card"
+          char="200"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+        ></Card>
+      </GridView>
+    </View>
+
+    <script type="module" src="../reactless.js"></script>
+  </body>
+</html>

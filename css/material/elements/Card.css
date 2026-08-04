@@ -1,0 +1,11 @@
+.rl-card--material {
+  background: #FFFBFE;
+  border: 1px solid #E7E0EC;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  font-family: var(--rl-font-sans);
+}
+.rl-card--material .rl-card__title { margin: 0 0 12px; font-size: 1.125rem; font-weight: 600; color: #1C1B1F; }
+.rl-card--material .rl-card__body { color: #49454F; line-height: 1.6; }
+.rl-card--material .rl-card__body > * + * { margin-top: 12px; }

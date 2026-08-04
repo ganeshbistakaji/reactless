@@ -1,0 +1,16 @@
+.rl-alert--material {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-family: var(--rl-font-sans);
+  font-size: 0.9375rem;
+}
+.rl-alert--material.rl-alert--info    { background: #E3F1FB; color: #0B4E85; }
+.rl-alert--material.rl-alert--success { background: #E7F6EC; color: #0F5A26; }
+.rl-alert--material.rl-alert--warning { background: #FFF4D6; color: #614700; }
+.rl-alert--material.rl-alert--error   { background: #FCE8E6; color: #8C1D18; }
+.rl-alert--material .rl-alert__close { background: none; border: none; font-size: 1.1rem; cursor: pointer; color: inherit; opacity: 0.6; line-height: 1; }
+.rl-alert--material .rl-alert__close:hover { opacity: 1; }

@@ -1,0 +1,37 @@
+.rl-hero--neobrutalism {
+  padding: 96px 24px;
+  background: #FFF6E9;
+  border-bottom: 3px solid #111;
+  text-align: left;
+}
+.rl-hero--neobrutalism .rl-hero__inner { max-width: 640px; margin: 0 auto; }
+.rl-hero--neobrutalism .rl-hero__eyebrow {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.875rem;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+}
+.rl-hero--neobrutalism .rl-hero__title {
+  font-family: var(--rl-font-sans);
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: #111;
+  margin: 0 0 16px;
+  background: #FFD23F;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0 6px;
+}
+.rl-hero--neobrutalism .rl-hero__content {
+  font-family: var(--rl-font-sans);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #111;
+  margin: 16px 0 0;
+  max-width: 46ch;
+}
