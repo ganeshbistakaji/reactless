@@ -46,9 +46,12 @@ export default class Navbar extends Template {
         ? `<a class="rl-navbar-cta-secondary--reactless" href="${this.escape(secondaryButton.link ?? "#")}">${this.escape(secondaryButton.name)}</a>`
         : "";
 
+    const fullscreen =
+      this.attributes.full !== undefined && this.attributes.full !== false;
+
     return `
     <nav class="rl-navbar rl-navbar--reactless">
-      <div class="rl-navbar-container--reactless">
+      <div class="rl-navbar-container--reactless ${fullscreen ? "" : "rl-navbar--boxed"}">
         <a class="rl-navbar-brand--reactless" href="/">
           ${brandContent}
         </a>
@@ -86,7 +89,6 @@ export default class Navbar extends Template {
     if (!ham || !menu) return;
 
     ham.addEventListener("click", (event) => {
-
       const hamburgerSvg = `<svg
           width="36"
         height="36"
