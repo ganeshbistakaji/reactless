@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Reactless demo</title>
     <link rel="stylesheet" href="../reactless.css" />
-     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ganeshbistakaji/reactless@dev_0.0.1/reactless.css"> -->
-    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ganeshbistakaji/reactless@dev_0.0.1/reactless.css"> -->
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <Navbar
@@ -114,9 +114,119 @@
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
         ></Card>
       </GridView>
+
+      <div style="margin-bottom: 100px"></div>
+
+      <Slider>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+        <Card
+          title="This is a card"
+          char="100"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m12OJP2Y2xAB9D4TZe-l_B6_h6mVHmwcUCvkxW2oJH1tTi2tppoPHcc&s=10"
+          ctaname="Learn More"
+          ctalink="https://youtube.com"
+          newtab
+        ></Card>
+      </Slider>
     </View>
 
     <script type="module" src="../reactless.js"></script>
+
+    <script type="module" defer>
+      export function initSlider(containerElement) {
+        const slider = containerElement.querySelector(
+          ".rl-slider-wrapper--reactless",
+        );
+        const leftBtn = containerElement.querySelector(
+          ".rl-slider-nav-left--reactless",
+        );
+        const rightBtn = containerElement.querySelector(
+          ".rl-slider-nav-right--reactless",
+        );
+
+        if (!slider || !leftBtn || !rightBtn) return;
+
+        const getScrollAmount = () => {
+          const card = slider.querySelector(".rl-slider-item--reactless");
+          if (!card) return 300;
+
+          const cardWidth = card.getBoundingClientRect().width;
+          const gap = parseFloat(window.getComputedStyle(slider).gap) || 16;
+
+          return cardWidth + gap;
+        };
+
+        rightBtn.addEventListener("click", () => {
+          slider.scrollTo({
+            left: slider.scrollLeft + getScrollAmount(),
+            behavior: "smooth",
+          });
+        });
+
+        leftBtn.addEventListener("click", () => {
+          slider.scrollTo({
+            left: slider.scrollLeft - getScrollAmount(),
+            behavior: "smooth",
+          });
+        });
+      }
+
+      // Automatically initialize all sliders found on the page once DOM is ready
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .querySelectorAll(".rl-slider--reactless")
+          .forEach((sliderRoot) => {
+            initSlider(sliderRoot);
+          });
+      });
+    </script>
     <!-- <script
       type="module"
       src="https://cdn.jsdelivr.net/gh/ganeshbistakaji/reactless@dev_0.0.1/reactless.js"

@@ -18,6 +18,7 @@ nav.rl-navbar--reactless {
   border: 1px solid #e5e7eb86;
   position: sticky;
   top: 0;
+  z-index: 10000;
 }
 
 nav.rl-navbar--reactless .rl-navbar-container--reactless {

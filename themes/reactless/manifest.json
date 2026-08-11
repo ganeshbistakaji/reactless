@@ -3,10 +3,16 @@
     { "name": "Hero", "type": "Template" },
     { "name": "Navbar", "type": "Template" },
     { "name": "Footer", "type": "Template" },
+    { "name": "Slider", "type": "Element", "allowChildren": true },
     { "name": "View", "type": "Element", "allowChildren": true },
     { "name": "GridView", "type": "Element", "allowChildren": true },
     { "name": "Heading", "type": "Element", "allowChildren": true },
-    { "name": "Title", "type": "Element", "allowChildren": true, "selfClosing": true },
+    {
+      "name": "Title",
+      "type": "Element",
+      "allowChildren": true,
+      "selfClosing": true
+    },
     { "name": "SubHeading", "type": "Element", "allowChildren": true },
     { "name": "Pressable", "type": "Element", "allowChildren": true },
     { "name": "Card", "type": "Template" },

@@ -9,8 +9,6 @@ export default class Navbar extends Template {
   render() {
     const brandData = this.attributes.brand;
 
-    console.log(brandData);
-
     const brandText = this.escape(brandData.brandText || "Reactless");
     const brandImage = this.escape(brandData.brandImage || "");
     const brandAlt = this.escape(brandData.brandAlt || "Brand Logo");

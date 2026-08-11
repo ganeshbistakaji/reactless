@@ -1,0 +1,83 @@
+.rl-slider--reactless {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 100000px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless button svg {
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless button svg path {
+  transition: all 0.3s ease;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless button:hover {
+  background-color: #4f46e5;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless button:active {
+  background-color: #3730a3;
+}
+
+.rl-slider--reactless .rl-slider-nav-buttons--reactless button:hover svg {
+  opacity: 1;
+  fill: #ffffff;
+}
+
+.rl-slider--reactless .rl-slider-wrapper--reactless {
+  display: flex;
+  overflow-x: scroll;
+  gap: 16px;
+  list-style: none;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.rl-slider--reactless .rl-slider-wrapper--reactless::-webkit-scrollbar {
+  display: none;
+}
+
+.rl-slider-item--reactless {
+  flex: 0 0 calc((100% - (16px * 0.5)) / 1.15);
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .rl-slider-item--reactless {
+    flex: 0 0 calc((100% - (16px * 1.5)) / 2.15);
+  }
+}
+
+@media (min-width: 1024px) {
+  .rl-slider-item--reactless {
+    flex: 0 0 calc((100% - (16px * 3.5)) / 4.15);
+  }
+}
