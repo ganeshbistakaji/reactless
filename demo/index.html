@@ -5,48 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Reactless demo</title>
     <link rel="stylesheet" href="../reactless.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <View>
-      <nav class="rl-navbar rl-navbar--reactless">
-        <div class="rl-navbar-container--reactless">
-          <a class="rl-navbar-brand--reactless" href="#">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
-              alt="Brand Logo"
-              class="rl-navbar-brand-image--reactless"
-            />
-          </a>
-          <div class="rl-navbar-inner--reactless">
-            <button class="rl-navbar-hamburger--reactless">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11.3333 13.8333C11.3333 13.3731 11.7063 13 12.1666 13H23.8333C24.2935 13 24.6666 13.3731 24.6666 13.8333C24.6666 14.2936 24.2935 14.6667 23.8333 14.6667H12.1666C11.7063 14.6667 11.3333 14.2936 11.3333 13.8333ZM11.3333 18C11.3333 17.5398 11.7063 17.1667 12.1666 17.1667H23.8333C24.2935 17.1667 24.6666 17.5398 24.6666 18C24.6666 18.4602 24.2935 18.8333 23.8333 18.8333H12.1666C11.7063 18.8333 11.3333 18.4602 11.3333 18ZM11.3333 22.1667C11.3333 21.7064 11.7063 21.3333 12.1666 21.3333H23.8333C24.2935 21.3333 24.6666 21.7064 24.6666 22.1667C24.6666 22.6269 24.2935 23 23.8333 23H12.1666C11.7063 23 11.3333 22.6269 11.3333 22.1667Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <ul class="rl-navbar-links--reactless">
-              <li><a class="rl-navbar-link--reactless" href="/">Home</a></li>
-              <li>
-                <a class="rl-navbar-link--reactless" href="/about">About</a>
-              </li>
-              <li>
-                <a class="rl-navbar-link--reactless" href="/contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="rl-navbar rl-navbar--reactless">
+      <div class="rl-navbar-container--reactless">
+        <a class="rl-navbar-brand--reactless" href="#">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7B8IYvwl0lSvCMgLdeXIR-irI3mbjCb6LEI61gmZ5Jg&s=10"
+            alt="Brand Logo"
+            class="rl-navbar-brand-image--reactless"
+          />
+          <!-- <span class="rl-navbar-brand-text--reactless">Hello</span> -->
+        </a>
+        <div class="rl-navbar-inner--reactless">
+          <button class="rl-navbar-hamburger--reactless">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.3333 13.8333C11.3333 13.3731 11.7063 13 12.1666 13H23.8333C24.2935 13 24.6666 13.3731 24.6666 13.8333C24.6666 14.2936 24.2935 14.6667 23.8333 14.6667H12.1666C11.7063 14.6667 11.3333 14.2936 11.3333 13.8333ZM11.3333 18C11.3333 17.5398 11.7063 17.1667 12.1666 17.1667H23.8333C24.2935 17.1667 24.6666 17.5398 24.6666 18C24.6666 18.4602 24.2935 18.8333 23.8333 18.8333H12.1666C11.7063 18.8333 11.3333 18.4602 11.3333 18ZM11.3333 22.1667C11.3333 21.7064 11.7063 21.3333 12.1666 21.3333H23.8333C24.2935 21.3333 24.6666 21.7064 24.6666 22.1667C24.6666 22.6269 24.2935 23 23.8333 23H12.1666C11.7063 23 11.3333 22.6269 11.3333 22.1667Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <ul class="rl-navbar-links--reactless rl-navbar-links-menu-inactive--reactless">
+            <li><a class="rl-navbar-link--reactless" href="/">Home</a></li>
+            <li>
+              <a class="rl-navbar-link--reactless" href="/about">About</a>
+            </li>
+            <li>
+              <a class="rl-navbar-link--reactless" href="/pricing">Pricing</a>
+            </li>
+            <li>
+              <a class="rl-navbar-cta-primary--reactless" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <a class="rl-navbar-cta-secondary--reactless" href="#">Login</a>
         </div>
-      </nav>
-
+      </div>
+    </nav>
+    <View>
       <!-- <Navbar
         brandtext="MySite"
         brandimage="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"

@@ -1,9 +1,30 @@
-nav.rl-navbar--reactless {
+nav.rl-navbar--reactless,
+nav.rl-navbar--reactless .rl-navbar-container--reactless {
   width: 100%;
 }
 
-nav.rl-navbar--reactless.rl-navbar--boxed .rl-navbar-container--reactless  {
-  width: 100%;
+nav.rl-navbar--reactless.rl-navbar--boxed .rl-navbar-container--reactless {
   max-width: 1440px;
   margin: 0px auto;
+}
+
+@media only screen and (min-width: 1025px) {
+  nav.rl-navbar--reactless:not(.rl-navbar--boxed)
+    .rl-navbar-container--reactless {
+    margin: 0px 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024.98px) {
+  nav.rl-navbar--reactless:not(.rl-navbar--boxed)
+    .rl-navbar-container--reactless {
+    margin: 0px 40px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  nav.rl-navbar--reactless:not(.rl-navbar--boxed)
+    .rl-navbar-container--reactless {
+    margin: 0px 20px;
+  }
 }

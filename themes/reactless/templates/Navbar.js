@@ -1,6 +1,11 @@
 import { Template } from "../../../core/Template.js";
 
 export default class Navbar extends Template {
+  constructor(props) {
+    super(props);
+    this._bound = false;
+  }
+
   render() {
     const brandText = this.escape(this.attributes.brandtext ?? "");
     const brandImage = this.escape(this.attributes.brandimage ?? "");
@@ -10,7 +15,7 @@ export default class Navbar extends Template {
     if (brandImage) {
       brandContent = `<img src="${brandImage}" alt="${brandAlt || "Brand Logo"}" class="rl-navbar__brand-image" />`;
     } else if (brandText) {
-      brandContent = `<span class="rl-navbar__brand-text">${brandText}</span>`;
+      brandContent = `<span class="rl-navbar-brand-text--reactless">${brandText}</span>`;
     }
 
     // `links` arrives as a real array already — Component.coerce() parsed
@@ -28,7 +33,19 @@ export default class Navbar extends Template {
       <nav class="rl-navbar rl-navbar--material">
       <a class="rl-navbar__brand" href="#">${brandContent}</a>  
         <ul class="rl-navbar__links">${items}</ul>
+        <button class="custom-button">dsf</button>
       </nav>`;
+  }
+
+  mount(el) {
+    super.mount(el);
+    if (!el || this._bound) return;
+    this._bound = true;
+
+    const button = el.querySelector(".custom-button");
+    if (!button) return;
+
+    button.addEventListener("click", (event) => {});
   }
 }
 
