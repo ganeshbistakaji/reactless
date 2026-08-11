@@ -86,8 +86,6 @@ export default class Navbar extends Template {
     if (!ham || !menu) return;
 
     ham.addEventListener("click", (event) => {
-      // menu.classList.toggle("rl-navbar-links-menu-inactive--reactless");
-      // menu.classList.toggle("rl-navbar-links-menu-active--reactless");
 
       const hamburgerSvg = `<svg
           width="36"
