@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Reactless demo</title>
     <link rel="stylesheet" href="../reactless.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
   </head>
   <body>
-    <nav class="rl-navbar rl-navbar--reactless">
+    <Navbar
+      brand='{"brandText":"Test", "brandImage": "https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-svg-download-png-458175.png", "brandAlt": "React logo"}'
+      menus='[{"menu": "Home", "link": "/"}, {"menu": "About", "link": "/about"}, {"menu": "Contact", "link": "/contact"}]'
+      primarybutton='{"name": "Contact Us", "link": "/contact"}'
+      secondarybutton='{"name": "Login", "link": "/contact"}'
+    />
+
+       <!-- <Navbar
+      brandtext="MySite"
+      brandimage="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+      brandalt="Brand Logo"
+      menus='[{"menu": "Home", "link": "/"}, {"menu": "About", "link": "/about"}, {"menu": "Contact", "link": "/contact"}]'
+      primarybutton='{"name": "Contact Us", "link": "/contact"}'
+      secondarybutton='{"name": "Login", "link": "/contact"}'
+    /> -->
+    <!-- <nav class="rl-navbar rl-navbar--reactless">
       <div class="rl-navbar-container--reactless">
         <a class="rl-navbar-brand--reactless" href="#">
           <img
@@ -16,7 +31,7 @@
             alt="Brand Logo"
             class="rl-navbar-brand-image--reactless"
           />
-          <!-- <span class="rl-navbar-brand-text--reactless">Hello</span> -->
+          <span class="rl-navbar-brand-text--reactless">Hello</span>
         </a>
         <div class="rl-navbar-inner--reactless">
           <button class="rl-navbar-hamburger--reactless">
@@ -50,7 +65,7 @@
           <a class="rl-navbar-cta-secondary--reactless" href="#">Login</a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <View>
       <!-- <Navbar
         brandtext="MySite"
@@ -72,6 +87,7 @@
         <SubHeading>Subheading 3</SubHeading>
         <SubHeading>Subheading 4</SubHeading>
       </GridView> -->
+      
 
       <GridView columns="4" fraction="1">
         <Card

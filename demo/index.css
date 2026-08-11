@@ -366,6 +366,6 @@ nav.rl-navbar--reactless
     .rl-navbar-container--reactless
     .rl-navbar-inner--reactless
     .rl-navbar-links--reactless:is(.rl-navbar-links-menu-inactive--reactless) {
-    top: -100px;
+    top: 33px;
   }
 }
