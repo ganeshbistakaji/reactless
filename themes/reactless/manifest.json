@@ -15,7 +15,7 @@
     },
     { "name": "SubHeading", "type": "Element", "allowChildren": true },
     { "name": "Pressable", "type": "Element", "allowChildren": true },
-    { "name": "Card", "type": "Template" },
+    { "name": "Card", "type": "Element", "allowChildren": false },
     { "name": "Alert", "type": "Element", "allowChildren": true }
   ]
 }

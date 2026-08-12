@@ -3,29 +3,12 @@ import { Element } from "../../../core/Element.js";
 export default class Slider extends Element {
   
   render() {
-    // // Clear the slider container first if needed
-    // const sliderContainer = document.querySelector(".slider"); // or your target container
-
-    // const childrenArray = Array.isArray(this.children)
-    //   ? this.children
-    //   : [this.children];
-
-    // childrenArray.forEach((child) => {
-    //   const li = document.createElement("li");
-    //   li.className = "rl-slider-item--reactless";
-
-    //   // Append the actual DOM node element safely
-    //   li.appendChild(child);
-    //   sliderContainer.appendChild(li);
-    // });
-
+    
     const template = document.createElement("template");
     template.innerHTML = String(this.children || "").trim();
     
-    // 2. Get all top-level child elements (your <Card> elements)
     const cardNodes = Array.from(template.content.children);
 
-    // 3. Map each card's outerHTML into an individual <li> string
     const listItems = cardNodes
       .map((card) => `<li class="rl-slider-item--reactless">${card.outerHTML}</li>`)
       .join("");
