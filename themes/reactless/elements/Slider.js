@@ -1,20 +1,29 @@
 import { Element } from "../../../core/Element.js";
 
 export default class Slider extends Element {
-  
   render() {
-    
+    const amount = this.attributes.amount || 4;
+
+    // const infinite =
+    //   this.attributes.infinite !== undefined &&
+    //   this.attributes.infinite !== false;
+
+    const finalAmount = parseInt(amount) + 0.15;
+
     const template = document.createElement("template");
     template.innerHTML = String(this.children || "").trim();
-    
+
     const cardNodes = Array.from(template.content.children);
 
     const listItems = cardNodes
-      .map((card) => `<li class="rl-slider-item--reactless">${card.outerHTML}</li>`)
+      .map(
+        (card) =>
+          `<li class="rl-slider-item--reactless">${card.outerHTML}</li>`,
+      )
       .join("");
-      
+
     return `
-      <div class="rl-slider--reactless">
+      <div class="rl-slider--reactless"  style="--item-amount: ${finalAmount};">
         <div class="rl-slider-nav-buttons--reactless">
           <button class="rl-slider-nav-left--reactless">
             <svg

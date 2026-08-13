@@ -78,6 +78,6 @@
 
 @media (min-width: 1024px) {
   .rl-slider-item--reactless {
-    flex: 0 0 calc((100% - (16px * 3.5)) / 4.15);
+    flex: 0 0 calc((100% - (16px * 3.5)) / var(--item-amount));
   }
 }
